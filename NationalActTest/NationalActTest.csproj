@@ -103,6 +103,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tcysysactivitysupportdbDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tcysysactivitysupportdb_testDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tcysysactivitysupportdb_testDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -148,6 +153,17 @@
     </None>
     <None Include="tcysysactivitysupportdbDataSet1.xss">
       <DependentUpon>tcysysactivitysupportdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tcysysactivitysupportdb_testDataSet.xsc">
+      <DependentUpon>tcysysactivitysupportdb_testDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tcysysactivitysupportdb_testDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tcysysactivitysupportdb_testDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tcysysactivitysupportdb_testDataSet.xss">
+      <DependentUpon>tcysysactivitysupportdb_testDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

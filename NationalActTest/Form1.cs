@@ -258,12 +258,9 @@ namespace SummerActTest
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: 这行代码将数据加载到表“tcysysactivitysupportdbDataSet1.NationalDayActAwardSendLogs”中。您可以根据需要移动或删除它。
-            //this.nationalDayActAwardSendLogsTableAdapter.Fill(this.tcysysactivitysupportdbDataSet1.NationalDayActAwardSendLogs);
-            // TODO: 这行代码将数据加载到表“tcysysactivitysupportdbDataSet.UserSpecialItems”中。您可以根据需要移动或删除它。
-            //this.userSpecialItemsTableAdapter.Fill(this.tcysysactivitysupportdbDataSet.UserSpecialItems);
-            // TODO: 这行代码将数据加载到表“tcysysactivitysupportdbDataSet.NationalDayUserRebates”中。您可以根据需要移动或删除它。
-            //this.nationalDayUserRebatesTableAdapter.Fill(this.tcysysactivitysupportdbDataSet.NationalDayUserRebates);
+            // TODO: 这行代码将数据加载到表“tcysysactivitysupportdb_testDataSet.NationalDayOrders”中。您可以根据需要移动或删除它。
+            this.nationalDayOrdersTableAdapter.Fill(this.tcysysactivitysupportdb_testDataSet.NationalDayOrders);
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -743,5 +740,62 @@ namespace SummerActTest
         {
 
         }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.tcysysactivitysupportdb_testDataSet.NationalDayOrders.Clear();
+
+            var query = string.Empty;
+
+            long userId = 0;
+            if (!string.IsNullOrEmpty(textBox9.Text))
+            {
+                userId = Convert.ToInt64(textBox9.Text);
+                query = query+ $" and UserId = {userId}";
+
+            }
+
+            var payRemark = textBox10.Text;
+            if (!string.IsNullOrEmpty(payRemark))
+            {
+                query = query+  $" and PayRemark = '{payRemark}'";
+            }
+
+            var paySource =0;
+            if (!string.IsNullOrEmpty(comboBox2.Text))
+            {
+                paySource = comboBox2.Text.Contains("PC") ? 1 : 2;
+                query = query + $" and Source = {paySource}";
+            }
+
+
+            var dataSet1 = this.tcysysactivitysupportdb_testDataSet.NationalDayOrders;
+            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            {
+                conn.Open();
+                SqlCommand command = conn.CreateCommand();
+
+                if (paySource == 0 && userId == 0 && string.IsNullOrEmpty(payRemark))
+                {
+                    command.CommandText = $"SELECT * FROM [{DbName}].[dbo].[NationalDayOrders]";
+                }
+                else
+                {
+                    query = query.Substring(4);
+
+                    command.CommandText = $"SELECT * FROM [{DbName}].[dbo].[NationalDayOrders] where {query};";
+                }
+
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                dataAdapter.Fill(dataSet1);  //填充数据            
+            }
+
+        }
+
     }
 }
