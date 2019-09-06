@@ -44,6 +44,37 @@
             this.Act1AllComplete = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nationalDayOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tcysysactivitysupportdb_testDataSet = new NationalActTest.tcysysactivitysupportdb_testDataSet();
             this.button13 = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -65,8 +96,16 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.isMutiLotteryDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.awardGuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.getAwardDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sendStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.indexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isFreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.errorMessageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nationalDayActAwardSendLogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tcysysactivitysupportdbDataSet1 = new NationalActTest.tcysysactivitysupportdbDataSet1();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -173,49 +212,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.isMutiLotteryDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.awardGuidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.getAwardDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sendStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.indexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isFreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.errorMessageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nationalDayActAwardSendLogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tcysysactivitysupportdbDataSet1 = new NationalActTest.tcysysactivitysupportdbDataSet1();
             this.nationalDayActAwardSendLogsTableAdapter = new NationalActTest.tcysysactivitysupportdbDataSet1TableAdapters.NationalDayActAwardSendLogsTableAdapter();
-            this.tcysysactivitysupportdb_testDataSet = new NationalActTest.tcysysactivitysupportdb_testDataSet();
-            this.nationalDayOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nationalDayOrdersTableAdapter = new NationalActTest.tcysysactivitysupportdb_testDataSetTableAdapters.NationalDayOrdersTableAdapter();
-            this.label46 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nationalDayUserRebatesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet)).BeginInit();
@@ -223,16 +223,16 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nationalDayOrdersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdb_testDataSet)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nationalDayActAwardSendLogsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nationalDayActAwardSendLogsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdb_testDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nationalDayOrdersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // nationalDayUserRebatesBindingSource
@@ -365,6 +365,264 @@
             this.tabPage2.Text = "充值活动";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(294, 407);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(323, 12);
+            this.label51.TabIndex = 297;
+            this.label51.Text = "支付状态(0未知|1支付中|2支付成功|3支付失败|4支付超时)";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(32, 407);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(227, 12);
+            this.label50.TabIndex = 296;
+            this.label50.Text = "订单状态(0未知|1成功|2失败|3初始入库)";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(32, 454);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(269, 12);
+            this.label49.TabIndex = 295;
+            this.label49.Text = "发放状态(0未知|1未发放|2发放成功|3发放失败 )";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(32, 431);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(215, 12);
+            this.label48.TabIndex = 294;
+            this.label48.Text = "订单来源(0未知|1PC端|2Android|3IOS)";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1.PC",
+            "2.移动"});
+            this.comboBox2.Location = new System.Drawing.Point(623, 47);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 20);
+            this.comboBox2.TabIndex = 293;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(564, 50);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(53, 12);
+            this.label47.TabIndex = 38;
+            this.label47.Text = "支付平台";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(294, 50);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(41, 12);
+            this.label46.TabIndex = 36;
+            this.label46.Text = "订单号";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(341, 47);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(188, 21);
+            this.textBox10.TabIndex = 37;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20});
+            this.dataGridView4.DataSource = this.nationalDayOrdersBindingSource;
+            this.dataGridView4.Location = new System.Drawing.Point(34, 94);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowTemplate.Height = 23;
+            this.dataGridView4.Size = new System.Drawing.Size(1328, 283);
+            this.dataGridView4.TabIndex = 35;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "礼包订单ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "UserId";
+            this.dataGridViewTextBoxColumn2.HeaderText = "用户ID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "PackageId";
+            this.dataGridViewTextBoxColumn3.HeaderText = "礼包索引";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "PayTime";
+            this.dataGridViewTextBoxColumn10.HeaderText = "支付时间";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "PayStatus";
+            this.dataGridViewTextBoxColumn12.HeaderText = "支付状态";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Status";
+            this.dataGridViewTextBoxColumn8.HeaderText = "订单状态";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.ToolTipText = "0未知|1成功|2失败|3初始入库";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "AwardStatus";
+            this.dataGridViewTextBoxColumn16.HeaderText = "发放状态";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Source";
+            this.dataGridViewTextBoxColumn15.HeaderText = "订单来源";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "PackageName";
+            this.dataGridViewTextBoxColumn4.HeaderText = "礼包名称";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Price";
+            this.dataGridViewTextBoxColumn5.HeaderText = "售价";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "OriginalPrice";
+            this.dataGridViewTextBoxColumn6.HeaderText = "原价";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "MasterActId";
+            this.dataGridViewTextBoxColumn18.HeaderText = "主活动Id";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ActId";
+            this.dataGridViewTextBoxColumn7.HeaderText = "子活动Id";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Remark";
+            this.dataGridViewTextBoxColumn9.HeaderText = "备注";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "PayRemark";
+            this.dataGridViewTextBoxColumn11.HeaderText = "支付订单号";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "PaywayId";
+            this.dataGridViewTextBoxColumn13.HeaderText = "支付方式";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "PayMoney";
+            this.dataGridViewTextBoxColumn14.HeaderText = "支付金额";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "CreationTime";
+            this.dataGridViewTextBoxColumn17.HeaderText = "创建时间";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            this.dataGridViewTextBoxColumn17.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "UserIP";
+            this.dataGridViewTextBoxColumn19.HeaderText = "用户IP";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            this.dataGridViewTextBoxColumn19.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "IMEI";
+            this.dataGridViewTextBoxColumn20.HeaderText = "IMEI设备号";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            // 
+            // nationalDayOrdersBindingSource
+            // 
+            this.nationalDayOrdersBindingSource.DataMember = "NationalDayOrders";
+            this.nationalDayOrdersBindingSource.DataSource = this.tcysysactivitysupportdb_testDataSet;
+            // 
+            // tcysysactivitysupportdb_testDataSet
+            // 
+            this.tcysysactivitysupportdb_testDataSet.DataSetName = "tcysysactivitysupportdb_testDataSet";
+            this.tcysysactivitysupportdb_testDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // button13
             // 
             this.button13.Location = new System.Drawing.Point(840, 38);
@@ -410,8 +668,6 @@
             this.tabPage3.Controls.Add(this.button6);
             this.tabPage3.Controls.Add(this.button5);
             this.tabPage3.Controls.Add(this.dataGridView3);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.textBox1);
@@ -580,23 +836,76 @@
             this.dataGridView3.Size = new System.Drawing.Size(657, 204);
             this.dataGridView3.TabIndex = 77;
             // 
-            // button3
+            // isMutiLotteryDataGridViewCheckBoxColumn
             // 
-            this.button3.Location = new System.Drawing.Point(1240, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 52);
-            this.button3.TabIndex = 76;
-            this.button3.Text = "清空缓存";
-            this.button3.UseVisualStyleBackColor = true;
+            this.isMutiLotteryDataGridViewCheckBoxColumn.DataPropertyName = "IsMutiLottery";
+            this.isMutiLotteryDataGridViewCheckBoxColumn.HeaderText = "多抽标识";
+            this.isMutiLotteryDataGridViewCheckBoxColumn.Name = "isMutiLotteryDataGridViewCheckBoxColumn";
+            this.isMutiLotteryDataGridViewCheckBoxColumn.ReadOnly = true;
+            this.isMutiLotteryDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.isMutiLotteryDataGridViewCheckBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // button1
+            // awardGuidDataGridViewTextBoxColumn
             // 
-            this.button1.Location = new System.Drawing.Point(1026, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(208, 52);
-            this.button1.TabIndex = 75;
-            this.button1.Text = "清空数据库（慎点）";
-            this.button1.UseVisualStyleBackColor = true;
+            this.awardGuidDataGridViewTextBoxColumn.DataPropertyName = "AwardGuid";
+            this.awardGuidDataGridViewTextBoxColumn.HeaderText = "AwardGuid";
+            this.awardGuidDataGridViewTextBoxColumn.Name = "awardGuidDataGridViewTextBoxColumn";
+            this.awardGuidDataGridViewTextBoxColumn.ReadOnly = true;
+            this.awardGuidDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // itemNameDataGridViewTextBoxColumn
+            // 
+            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "ItemName";
+            this.itemNameDataGridViewTextBoxColumn.HeaderText = "奖励信息";
+            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
+            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // getAwardDateDataGridViewTextBoxColumn
+            // 
+            this.getAwardDateDataGridViewTextBoxColumn.DataPropertyName = "GetAwardDate";
+            this.getAwardDateDataGridViewTextBoxColumn.HeaderText = "获奖日期";
+            this.getAwardDateDataGridViewTextBoxColumn.Name = "getAwardDateDataGridViewTextBoxColumn";
+            this.getAwardDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sendStatusDataGridViewTextBoxColumn
+            // 
+            this.sendStatusDataGridViewTextBoxColumn.DataPropertyName = "SendStatus";
+            this.sendStatusDataGridViewTextBoxColumn.HeaderText = "发送状态";
+            this.sendStatusDataGridViewTextBoxColumn.Name = "sendStatusDataGridViewTextBoxColumn";
+            this.sendStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // indexDataGridViewTextBoxColumn
+            // 
+            this.indexDataGridViewTextBoxColumn.DataPropertyName = "Index";
+            this.indexDataGridViewTextBoxColumn.HeaderText = "总点数";
+            this.indexDataGridViewTextBoxColumn.Name = "indexDataGridViewTextBoxColumn";
+            this.indexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isFreeDataGridViewTextBoxColumn
+            // 
+            this.isFreeDataGridViewTextBoxColumn.DataPropertyName = "IsFree";
+            this.isFreeDataGridViewTextBoxColumn.HeaderText = "类型";
+            this.isFreeDataGridViewTextBoxColumn.Name = "isFreeDataGridViewTextBoxColumn";
+            this.isFreeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.isFreeDataGridViewTextBoxColumn.ToolTipText = "免费骰子=1,付费骰子=2, 付费银两=3";
+            // 
+            // errorMessageDataGridViewTextBoxColumn
+            // 
+            this.errorMessageDataGridViewTextBoxColumn.DataPropertyName = "ErrorMessage";
+            this.errorMessageDataGridViewTextBoxColumn.HeaderText = "失败信息";
+            this.errorMessageDataGridViewTextBoxColumn.Name = "errorMessageDataGridViewTextBoxColumn";
+            this.errorMessageDataGridViewTextBoxColumn.ReadOnly = true;
+            this.errorMessageDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // nationalDayActAwardSendLogsBindingSource
+            // 
+            this.nationalDayActAwardSendLogsBindingSource.DataMember = "NationalDayActAwardSendLogs";
+            this.nationalDayActAwardSendLogsBindingSource.DataSource = this.tcysysactivitysupportdbDataSet1;
+            // 
+            // tcysysactivitysupportdbDataSet1
+            // 
+            this.tcysysactivitysupportdbDataSet1.DataSetName = "tcysysactivitysupportdbDataSet1";
+            this.tcysysactivitysupportdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button4
             // 
@@ -750,6 +1059,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.button3);
+            this.tabPage4.Controls.Add(this.button1);
             this.tabPage4.Controls.Add(this.lCount);
             this.tabPage4.Controls.Add(this.label44);
             this.tabPage4.Controls.Add(this.label37);
@@ -1107,7 +1418,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(32, 208);
+            this.label30.Location = new System.Drawing.Point(30, 211);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(41, 12);
             this.label30.TabIndex = 291;
@@ -1607,342 +1918,31 @@
             this.label10.TabIndex = 233;
             this.label10.Text = "PC免费：";
             // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn19,
-            this.dataGridViewTextBoxColumn20});
-            this.dataGridView4.DataSource = this.nationalDayOrdersBindingSource;
-            this.dataGridView4.Location = new System.Drawing.Point(34, 94);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowTemplate.Height = 23;
-            this.dataGridView4.Size = new System.Drawing.Size(1328, 283);
-            this.dataGridView4.TabIndex = 35;
-            // 
-            // isMutiLotteryDataGridViewCheckBoxColumn
-            // 
-            this.isMutiLotteryDataGridViewCheckBoxColumn.DataPropertyName = "IsMutiLottery";
-            this.isMutiLotteryDataGridViewCheckBoxColumn.HeaderText = "多抽标识";
-            this.isMutiLotteryDataGridViewCheckBoxColumn.Name = "isMutiLotteryDataGridViewCheckBoxColumn";
-            this.isMutiLotteryDataGridViewCheckBoxColumn.ReadOnly = true;
-            this.isMutiLotteryDataGridViewCheckBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.isMutiLotteryDataGridViewCheckBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // awardGuidDataGridViewTextBoxColumn
-            // 
-            this.awardGuidDataGridViewTextBoxColumn.DataPropertyName = "AwardGuid";
-            this.awardGuidDataGridViewTextBoxColumn.HeaderText = "AwardGuid";
-            this.awardGuidDataGridViewTextBoxColumn.Name = "awardGuidDataGridViewTextBoxColumn";
-            this.awardGuidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.awardGuidDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // itemNameDataGridViewTextBoxColumn
-            // 
-            this.itemNameDataGridViewTextBoxColumn.DataPropertyName = "ItemName";
-            this.itemNameDataGridViewTextBoxColumn.HeaderText = "奖励信息";
-            this.itemNameDataGridViewTextBoxColumn.Name = "itemNameDataGridViewTextBoxColumn";
-            this.itemNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // getAwardDateDataGridViewTextBoxColumn
-            // 
-            this.getAwardDateDataGridViewTextBoxColumn.DataPropertyName = "GetAwardDate";
-            this.getAwardDateDataGridViewTextBoxColumn.HeaderText = "获奖日期";
-            this.getAwardDateDataGridViewTextBoxColumn.Name = "getAwardDateDataGridViewTextBoxColumn";
-            this.getAwardDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sendStatusDataGridViewTextBoxColumn
-            // 
-            this.sendStatusDataGridViewTextBoxColumn.DataPropertyName = "SendStatus";
-            this.sendStatusDataGridViewTextBoxColumn.HeaderText = "发送状态";
-            this.sendStatusDataGridViewTextBoxColumn.Name = "sendStatusDataGridViewTextBoxColumn";
-            this.sendStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // indexDataGridViewTextBoxColumn
-            // 
-            this.indexDataGridViewTextBoxColumn.DataPropertyName = "Index";
-            this.indexDataGridViewTextBoxColumn.HeaderText = "总点数";
-            this.indexDataGridViewTextBoxColumn.Name = "indexDataGridViewTextBoxColumn";
-            this.indexDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isFreeDataGridViewTextBoxColumn
-            // 
-            this.isFreeDataGridViewTextBoxColumn.DataPropertyName = "IsFree";
-            this.isFreeDataGridViewTextBoxColumn.HeaderText = "类型";
-            this.isFreeDataGridViewTextBoxColumn.Name = "isFreeDataGridViewTextBoxColumn";
-            this.isFreeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.isFreeDataGridViewTextBoxColumn.ToolTipText = "免费骰子=1,付费骰子=2, 付费银两=3";
-            // 
-            // errorMessageDataGridViewTextBoxColumn
-            // 
-            this.errorMessageDataGridViewTextBoxColumn.DataPropertyName = "ErrorMessage";
-            this.errorMessageDataGridViewTextBoxColumn.HeaderText = "失败信息";
-            this.errorMessageDataGridViewTextBoxColumn.Name = "errorMessageDataGridViewTextBoxColumn";
-            this.errorMessageDataGridViewTextBoxColumn.ReadOnly = true;
-            this.errorMessageDataGridViewTextBoxColumn.Width = 300;
-            // 
-            // nationalDayActAwardSendLogsBindingSource
-            // 
-            this.nationalDayActAwardSendLogsBindingSource.DataMember = "NationalDayActAwardSendLogs";
-            this.nationalDayActAwardSendLogsBindingSource.DataSource = this.tcysysactivitysupportdbDataSet1;
-            // 
-            // tcysysactivitysupportdbDataSet1
-            // 
-            this.tcysysactivitysupportdbDataSet1.DataSetName = "tcysysactivitysupportdbDataSet1";
-            this.tcysysactivitysupportdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // nationalDayActAwardSendLogsTableAdapter
             // 
             this.nationalDayActAwardSendLogsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tcysysactivitysupportdb_testDataSet
-            // 
-            this.tcysysactivitysupportdb_testDataSet.DataSetName = "tcysysactivitysupportdb_testDataSet";
-            this.tcysysactivitysupportdb_testDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nationalDayOrdersBindingSource
-            // 
-            this.nationalDayOrdersBindingSource.DataMember = "NationalDayOrders";
-            this.nationalDayOrdersBindingSource.DataSource = this.tcysysactivitysupportdb_testDataSet;
             // 
             // nationalDayOrdersTableAdapter
             // 
             this.nationalDayOrdersTableAdapter.ClearBeforeFill = true;
             // 
-            // label46
+            // button3
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(294, 50);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(41, 12);
-            this.label46.TabIndex = 36;
-            this.label46.Text = "订单号";
+            this.button3.Location = new System.Drawing.Point(246, 440);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 52);
+            this.button3.TabIndex = 323;
+            this.button3.Text = "清空缓存";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // button1
             // 
-            this.textBox10.Location = new System.Drawing.Point(341, 47);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(188, 21);
-            this.textBox10.TabIndex = 37;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(564, 50);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(53, 12);
-            this.label47.TabIndex = 38;
-            this.label47.Text = "支付平台";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1.PC",
-            "2.移动"});
-            this.comboBox2.Location = new System.Drawing.Point(623, 47);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 20);
-            this.comboBox2.TabIndex = 293;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(32, 431);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(215, 12);
-            this.label48.TabIndex = 294;
-            this.label48.Text = "订单来源(0未知|1PC端|2Android|3IOS)";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(32, 454);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(269, 12);
-            this.label49.TabIndex = 295;
-            this.label49.Text = "发放状态(0未知|1未发放|2发放成功|3发放失败 )";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(32, 407);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(227, 12);
-            this.label50.TabIndex = 296;
-            this.label50.Text = "订单状态(0未知|1成功|2失败|3初始入库)";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(294, 407);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(323, 12);
-            this.label51.TabIndex = 297;
-            this.label51.Text = "支付状态(0未知|1支付中|2支付成功|3支付失败|4支付超时)";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "礼包订单ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "UserId";
-            this.dataGridViewTextBoxColumn2.HeaderText = "用户ID";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "PackageId";
-            this.dataGridViewTextBoxColumn3.HeaderText = "礼包索引";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "PayTime";
-            this.dataGridViewTextBoxColumn10.HeaderText = "支付时间";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "PayStatus";
-            this.dataGridViewTextBoxColumn12.HeaderText = "支付状态";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Status";
-            this.dataGridViewTextBoxColumn8.HeaderText = "订单状态";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.ToolTipText = "0未知|1成功|2失败|3初始入库";
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.DataPropertyName = "AwardStatus";
-            this.dataGridViewTextBoxColumn16.HeaderText = "发放状态";
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            this.dataGridViewTextBoxColumn16.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Source";
-            this.dataGridViewTextBoxColumn15.HeaderText = "订单来源";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "PackageName";
-            this.dataGridViewTextBoxColumn4.HeaderText = "礼包名称";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Price";
-            this.dataGridViewTextBoxColumn5.HeaderText = "售价";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "OriginalPrice";
-            this.dataGridViewTextBoxColumn6.HeaderText = "原价";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "MasterActId";
-            this.dataGridViewTextBoxColumn18.HeaderText = "主活动Id";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ActId";
-            this.dataGridViewTextBoxColumn7.HeaderText = "子活动Id";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Remark";
-            this.dataGridViewTextBoxColumn9.HeaderText = "备注";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "PayRemark";
-            this.dataGridViewTextBoxColumn11.HeaderText = "支付订单号";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.DataPropertyName = "PaywayId";
-            this.dataGridViewTextBoxColumn13.HeaderText = "支付方式";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.DataPropertyName = "PayMoney";
-            this.dataGridViewTextBoxColumn14.HeaderText = "支付金额";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "CreationTime";
-            this.dataGridViewTextBoxColumn17.HeaderText = "创建时间";
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            this.dataGridViewTextBoxColumn17.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.DataPropertyName = "UserIP";
-            this.dataGridViewTextBoxColumn19.HeaderText = "用户IP";
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            this.dataGridViewTextBoxColumn19.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.DataPropertyName = "IMEI";
-            this.dataGridViewTextBoxColumn20.HeaderText = "IMEI设备号";
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            this.dataGridViewTextBoxColumn20.ReadOnly = true;
+            this.button1.Location = new System.Drawing.Point(32, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(208, 52);
+            this.button1.TabIndex = 322;
+            this.button1.Text = "清空数据库（慎点）";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1963,18 +1963,18 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nationalDayOrdersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdb_testDataSet)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nationalDayActAwardSendLogsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nationalDayActAwardSendLogsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdb_testDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nationalDayOrdersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2024,8 +2024,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn indexDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn isFreeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn errorMessageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
@@ -2187,6 +2185,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }
 
