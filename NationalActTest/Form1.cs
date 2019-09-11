@@ -10,6 +10,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
+using TcySys.General.Security;
+using System.IO;
 
 namespace SummerActTest
 {
@@ -339,8 +342,8 @@ namespace SummerActTest
                     com.Connection = con;
                     com.CommandType = CommandType.Text;
                     com.CommandText =
-                        $"Delete From [{DbName}].[dbo].[UserSpecialItems]  WHERE UserId = " + userId + " and SpecialItemId = 41;" +
-                        $"Delete From [{DbName}].[dbo].[UserSpecialItemsLogs]  WHERE UserId = " + userId + " and SpecialItemId = 41;" +
+                        $"Delete From [{DbName}].[dbo].[UserSpecialItems]  WHERE UserId = " + userId + " and SpecialItemId = 14;" +
+                        $"Delete From [{DbName}].[dbo].[UserSpecialItemsLogs]  WHERE UserId = " + userId + " and SpecialItemId = 14;" +
                         $"INSERT INTO [{DbName}].[dbo].[UserSpecialItems] ([UserId],[MasterActId],[SpecialItemId],[SpecialItemName],[TotalCount],[UsedCount],[CreationTime],[UpdateTime]" +
                            ",[IsDeleted],[SpecialItemCode]) VALUES(" + userId + ",  90004, 14, '玉兔骰子', " + count + ", 0, '" + DateTime.Now + "', '" + DateTime.Now + "', 0, 'NationalDay_Dice');";
 
@@ -383,10 +386,10 @@ namespace SummerActTest
                     com.Connection = con;
                     com.CommandType = CommandType.Text;
                     com.CommandText =
-                        $"Delete From [{DbName}].[dbo].[UserSpecialItems]  WHERE UserId = " + userId + " and SpecialItemId = 43;" +
-                        $"Delete From [{DbName}].[dbo].[UserSpecialItemsLogs]  WHERE UserId = " + userId + " and SpecialItemId = 43;" +
+                        $"Delete From [{DbName}].[dbo].[UserSpecialItems]  WHERE UserId = " + userId + " and SpecialItemId = 16;" +
+                        $"Delete From [{DbName}].[dbo].[UserSpecialItemsLogs]  WHERE UserId = " + userId + " and SpecialItemId = 16;" +
                         $"INSERT INTO [{DbName}].[dbo].[UserSpecialItems] ([UserId],[MasterActId],[SpecialItemId],[SpecialItemName],[TotalCount],[UsedCount],[CreationTime],[UpdateTime]" +
-                           ",[IsDeleted],[SpecialItemCode]) VALUES(" + userId + ", 90004, 15, '玉兔骰子(付费)', " + count + ", 0, '" + DateTime.Now + "', '" + DateTime.Now + "', 0, 'NationalDay_Dice_Pay');";
+                           ",[IsDeleted],[SpecialItemCode]) VALUES(" + userId + ", 90004, 16, '玉兔骰子(付费)', " + count + ", 0, '" + DateTime.Now + "', '" + DateTime.Now + "', 0, 'NationalDay_Dice_Pay');";
 
                     SqlDataReader dr = com.ExecuteReader();//执行SQL语句
 
@@ -425,10 +428,10 @@ namespace SummerActTest
                     com.Connection = con;
                     com.CommandType = CommandType.Text;
                     com.CommandText =
-                        $"Delete From [{DbName}].[dbo].[UserSpecialItems]  WHERE UserId = " + userId + " and SpecialItemId = 42;" +
-                        $"Delete From [{DbName}].[dbo].[UserSpecialItemsLogs]  WHERE UserId = " + userId + " and SpecialItemId = 42;" +
+                        $"Delete From [{DbName}].[dbo].[UserSpecialItems]  WHERE UserId = " + userId + " and SpecialItemId = 15;" +
+                        $"Delete From [{DbName}].[dbo].[UserSpecialItemsLogs]  WHERE UserId = " + userId + " and SpecialItemId = 15;" +
                         $"INSERT INTO [{DbName}].[dbo].[UserSpecialItems] ([UserId],[MasterActId],[SpecialItemId],[SpecialItemName],[TotalCount],[UsedCount],[CreationTime],[UpdateTime]" +
-                           ",[IsDeleted],[SpecialItemCode]) VALUES(" + userId + ", 90004, 16, '加倍次数', " + count + ", 0, '" + DateTime.Now + "', '" + DateTime.Now + "', 0, 'NationalDay_DoubleCount');";
+                           ",[IsDeleted],[SpecialItemCode]) VALUES(" + userId + ", 90004, 15, '加倍次数', " + count + ", 0, '" + DateTime.Now + "', '" + DateTime.Now + "', 0, 'NationalDay_DoubleCount');";
 
                     SqlDataReader dr = com.ExecuteReader();//执行SQL语句
 
@@ -497,13 +500,13 @@ namespace SummerActTest
             returnNum = ReturnAwardValue(award9, count, 9, returnNum);
             var award10 = Convert.ToDouble(t10.Text) / 100;
             returnNum = ReturnAwardValue(award10, count, 10, returnNum);
-            var award11= Convert.ToDouble(t11.Text) / 100;
+            var award11 = Convert.ToDouble(t11.Text) / 100;
             returnNum = ReturnAwardValue(award11, count, 11, returnNum);
-            var award12= Convert.ToDouble(t12.Text) / 100;
+            var award12 = Convert.ToDouble(t12.Text) / 100;
             returnNum = ReturnAwardValue(award12, count, 12, returnNum);
         }
 
-        private double ReturnAwardValue(double award,int count,int num,double startCount)
+        private double ReturnAwardValue(double award, int count, int num, double startCount)
         {
             if (award == 0)
             {
@@ -564,7 +567,7 @@ namespace SummerActTest
             {
                 var index = GeneratePrizeIndex(i);
                 Thread.Sleep(5);
-                stringBuilder.Append(index + " ");              
+                stringBuilder.Append(index + " ");
             }
 
             for (var i = 0; i < 10; i++)
@@ -583,8 +586,8 @@ namespace SummerActTest
         /// <param name="config"></param>
         /// <returns></returns>
         public int GeneratePrizeIndex(int i)
-        {      
-            var random = new Random();            
+        {
+            var random = new Random();
             var weight = random.Next(1, 10001);
             return weight;
         }
@@ -610,7 +613,7 @@ namespace SummerActTest
             CheckForIllegalCrossThreadCalls = false;
             var countDic = new Dictionary<int, int>();
             countDic[1] = 0;
-            countDic[2] = 0;        
+            countDic[2] = 0;
             countDic[3] = 0;
             countDic[4] = 0;
             countDic[5] = 0;
@@ -688,7 +691,7 @@ namespace SummerActTest
 
                 });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -696,12 +699,12 @@ namespace SummerActTest
             {
                 button12.Enabled = true;
             }
- 
 
- 
+
+
         }
 
-        public void GetPrecent(Dictionary<int, int> dic,double lotteryCount, List<AwardConfigItem> config)
+        public void GetPrecent(Dictionary<int, int> dic, double lotteryCount, List<AwardConfigItem> config)
         {
             var step = lotteryCount / 100;
             var progressCount = 1;
@@ -721,7 +724,7 @@ namespace SummerActTest
                 }
 
                 if (i % 200 == 0)
-                {                  
+                {
                     Thread.Sleep(1000);
                 }
 
@@ -732,7 +735,7 @@ namespace SummerActTest
                 }
 
                 j++;
-         
+
             }
         }
 
@@ -756,17 +759,17 @@ namespace SummerActTest
             if (!string.IsNullOrEmpty(textBox9.Text))
             {
                 userId = Convert.ToInt64(textBox9.Text);
-                query = query+ $" and UserId = {userId}";
+                query = query + $" and UserId = {userId}";
 
             }
 
             var payRemark = textBox10.Text;
             if (!string.IsNullOrEmpty(payRemark))
             {
-                query = query+  $" and PayRemark = '{payRemark}'";
+                query = query + $" and PayRemark = '{payRemark}'";
             }
 
-            var paySource =0;
+            var paySource = 0;
             if (!string.IsNullOrEmpty(comboBox2.Text))
             {
                 paySource = comboBox2.Text.Contains("PC") ? 1 : 2;
@@ -795,6 +798,190 @@ namespace SummerActTest
                 dataAdapter.Fill(dataSet1);  //填充数据            
             }
 
+        }
+
+        /// <summary>
+        /// 删除用户订单数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button14_Click(object sender, EventArgs e)
+        {
+            var userIdStr = textUserIdList.Text;
+            var UserIdList = userIdStr.Split(',').ToList();
+
+            //查询数据，然后删除对应的缓存数据
+            using (SqlConnection con = new SqlConnection())
+            {
+                con.ConnectionString = ConnectionString;
+                con.Open();
+
+                SqlCommand com = new SqlCommand();
+                com.Connection = con;
+                com.CommandType = CommandType.Text;
+                com.CommandText = $"SELECT * FROM [{DbName}].[dbo].[NationalDayOrders] WHERE UserId in ({userIdStr});";
+
+                SqlDataReader dr = com.ExecuteReader();//执行SQL语句
+
+                ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(Host);
+                var database = redis.GetDatabase(db);
+
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        var imei = dr["IMEI"];
+                        var userId = dr["UserId"];
+
+                        //遍历每一种礼包，这里随便写了个15 
+                        for (int i = 1; i < 15; i++)
+                        {
+                            var key = $"TcySys_NationalAct_ChargeAct_UserBuyIEMIList_{i}";
+                            var key2 = $"TcySys_NationalAct_ChargeAct_UserBuyList_{i}";
+                            database.HashDelete(key2, userId.ToString());
+                            database.HashDelete(key, imei.ToString());
+                        }
+                    }
+                }
+
+                database.KeyDelete("TcySys_NationalAct_ChargeAct_RefreshTimer");
+
+                dr.Close();//关闭执行
+                con.Close();//关闭数据库
+            }
+
+            //删除缓存内用户的数据
+            using (SqlConnection con = new SqlConnection())
+            {
+                con.ConnectionString = ConnectionString;
+                con.Open();
+
+                SqlCommand com = new SqlCommand();
+                com.Connection = con;
+                com.CommandType = CommandType.Text;
+                com.CommandText =
+                    $"DELETE FROM [{DbName}].[dbo].[NationalDayOrders] WHERE UserId in ({userIdStr})";
+
+                SqlDataReader dr = com.ExecuteReader();//执行SQL语句
+
+                dr.Close();//关闭执行
+                con.Close();//关闭数据库
+            }
+
+
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
+            var userId = long.Parse(textBox11.Text);
+            //进行验证
+            var md5Code = GetMd5(userId, (int)AwardClientType.PC, 1234567890, "tewtgds&jtrjsdte");
+
+            var input = new SpecialActInputBase
+            {
+                UserId = userId,
+                CheckCode = md5Code,
+                ClientType = AwardClientType.PC,
+                Ip = "192.168.7.140",
+                Os = 1,
+                TimeStamp = 1234567890,
+                UserName = "国庆测试工具"
+            };
+
+            var postData = JsonConvert.SerializeObject(input);
+
+            var silverUrl = "http://actspt.tcy365.org:1507/api/nationalAct/sliverInfo";
+            var exchangeUrl = "http://actspt.tcy365.org:1507/api/nationalAct/exchangeCount";
+
+            string str = HttpHelper.RequestHttpData(silverUrl, "post", postData, null, 50000, "application/json");
+
+            var silverResult = JsonConvert.DeserializeObject<Result<GetUserSliverInfo>>(str);
+
+            lblSilver.Text = silverResult.Data.UserSliverCount.ToString();
+
+            string str2 = HttpHelper.RequestHttpData(exchangeUrl, "post", postData, null, 50000, "application/json");
+
+            var exchangeResult = JsonConvert.DeserializeObject<Result<long>>(str2);
+
+            lblTickets.Text = exchangeResult.Data.ToString();
+
+        }
+
+        public static string GetMd5(long userId, int clientType, long timestamp, string md5Key)
+        {
+            var source = userId + "|" + clientType + "|" + timestamp + "|" + md5Key;
+            return SecurityHelper.GetMd5(source);
+        }
+
+        /// <summary>
+        /// 查看配置
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnConfig_Click(object sender, EventArgs e)
+        {
+            txtConfigContent.Clear();
+
+            var comConfig = comboxConfig.Text;
+
+            ConnectionMultiplexer redis = ConnectionMultiplexer.Connect(Host);
+            var database = redis.GetDatabase(db);
+
+            var key = "TcySys_SpecialActConfig_MasterActId_90004";
+
+            if (comConfig.Contains("2"))
+            {
+                key = "TcySys_SpecialActConfig_Master_90004_Sub_1";
+            }
+
+            if (comConfig.Contains("3"))
+            {
+                key = "TcySys_SpecialActConfig_Master_90004_Sub_2";
+            }
+
+            if (comConfig.Contains("4"))
+            {
+                key = "TcySys_SpecialActConfig_Master_90004_Sub_3";
+            }
+
+
+            var configRedis = database.StringGet(key);
+            //var config = JsonConvert.DeserializeObject<string>(configRedis);
+
+            txtConfigContent.Text = ConvertJsonString(configRedis);
+
+        }
+
+        /// <summary>
+        /// 格式化json
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        private string ConvertJsonString(string str)
+        {
+            //格式化json字符串
+            JsonSerializer serializer = new JsonSerializer();
+            TextReader tr = new StringReader(str);
+            JsonTextReader jtr = new JsonTextReader(tr);
+            object obj = serializer.Deserialize(jtr);
+            if (obj != null)
+            {
+                StringWriter textWriter = new StringWriter();
+                JsonTextWriter jsonWriter = new JsonTextWriter(textWriter)
+                {
+                    Formatting = Formatting.Indented,
+                    Indentation = 4,
+                    IndentChar = ' '
+                };
+                serializer.Serialize(jsonWriter, obj);
+                return textWriter.ToString();
+            }
+            else
+            {
+                return str;
+            }
         }
 
     }

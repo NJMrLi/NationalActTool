@@ -122,7 +122,9 @@
             this.totalCountDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usedCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.specialItemCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Tab4 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.lCount = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
@@ -214,8 +216,20 @@
             this.label10 = new System.Windows.Forms.Label();
             this.nationalDayActAwardSendLogsTableAdapter = new NationalActTest.tcysysactivitysupportdbDataSet1TableAdapters.NationalDayActAwardSendLogsTableAdapter();
             this.nationalDayOrdersTableAdapter = new NationalActTest.tcysysactivitysupportdb_testDataSetTableAdapters.NationalDayOrdersTableAdapter();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.textUserIdList = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.lblSilver = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.lblTickets = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.comboxConfig = new System.Windows.Forms.ComboBox();
+            this.btnConfig = new System.Windows.Forms.Button();
+            this.txtConfigContent = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nationalDayUserRebatesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet)).BeginInit();
@@ -232,6 +246,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.Tab4.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -268,6 +283,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.Tab4);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(3, 1);
             this.tabControl1.Name = "tabControl1";
@@ -299,6 +315,7 @@
             this.button2.TabIndex = 32;
             this.button2.Text = "签到清除某人数据";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // initAct1
             // 
@@ -308,6 +325,7 @@
             this.initAct1.TabIndex = 27;
             this.initAct1.Text = "签到 模拟新的一天";
             this.initAct1.UseVisualStyleBackColor = true;
+            this.initAct1.Click += new System.EventHandler(this.initAct1_Click);
             // 
             // label3
             // 
@@ -333,6 +351,7 @@
             this.Act1AllComplete.TabIndex = 30;
             this.Act1AllComplete.Text = "签到 清除设备和IP限制";
             this.Act1AllComplete.UseVisualStyleBackColor = true;
+            this.Act1AllComplete.Click += new System.EventHandler(this.Act1AllComplete_Click);
             // 
             // label8
             // 
@@ -345,6 +364,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label52);
+            this.tabPage2.Controls.Add(this.textUserIdList);
+            this.tabPage2.Controls.Add(this.button14);
             this.tabPage2.Controls.Add(this.label51);
             this.tabPage2.Controls.Add(this.label50);
             this.tabPage2.Controls.Add(this.label49);
@@ -368,7 +390,8 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(294, 407);
+            this.label51.ForeColor = System.Drawing.Color.Red;
+            this.label51.Location = new System.Drawing.Point(314, 384);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(323, 12);
             this.label51.TabIndex = 297;
@@ -377,7 +400,8 @@
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(32, 407);
+            this.label50.ForeColor = System.Drawing.Color.Red;
+            this.label50.Location = new System.Drawing.Point(52, 384);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(227, 12);
             this.label50.TabIndex = 296;
@@ -386,7 +410,8 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(32, 454);
+            this.label49.ForeColor = System.Drawing.Color.Red;
+            this.label49.Location = new System.Drawing.Point(896, 384);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(269, 12);
             this.label49.TabIndex = 295;
@@ -395,7 +420,8 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(32, 431);
+            this.label48.ForeColor = System.Drawing.Color.Red;
+            this.label48.Location = new System.Drawing.Point(659, 384);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(215, 12);
             this.label48.TabIndex = 294;
@@ -469,7 +495,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.RowTemplate.Height = 23;
-            this.dataGridView4.Size = new System.Drawing.Size(1328, 283);
+            this.dataGridView4.Size = new System.Drawing.Size(1328, 267);
             this.dataGridView4.TabIndex = 35;
             // 
             // dataGridViewTextBoxColumn1
@@ -721,6 +747,7 @@
             this.button8.TabIndex = 89;
             this.button8.Text = "增加加倍次数";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // textBox4
             // 
@@ -762,6 +789,7 @@
             this.button7.TabIndex = 84;
             this.button7.Text = "增加付费玉兔骰子";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // ytUserId1
             // 
@@ -803,6 +831,7 @@
             this.button6.TabIndex = 79;
             this.button6.Text = "增加玉兔骰子";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -1057,106 +1086,131 @@
             this.specialItemCodeDataGridViewTextBoxColumn.ReadOnly = true;
             this.specialItemCodeDataGridViewTextBoxColumn.Width = 150;
             // 
-            // tabPage4
+            // Tab4
             // 
-            this.tabPage4.Controls.Add(this.button3);
-            this.tabPage4.Controls.Add(this.button1);
-            this.tabPage4.Controls.Add(this.lCount);
-            this.tabPage4.Controls.Add(this.label44);
-            this.tabPage4.Controls.Add(this.label37);
-            this.tabPage4.Controls.Add(this.label38);
-            this.tabPage4.Controls.Add(this.label39);
-            this.tabPage4.Controls.Add(this.label40);
-            this.tabPage4.Controls.Add(this.label41);
-            this.tabPage4.Controls.Add(this.label42);
-            this.tabPage4.Controls.Add(this.label31);
-            this.tabPage4.Controls.Add(this.label32);
-            this.tabPage4.Controls.Add(this.label33);
-            this.tabPage4.Controls.Add(this.label34);
-            this.tabPage4.Controls.Add(this.label35);
-            this.tabPage4.Controls.Add(this.label36);
-            this.tabPage4.Controls.Add(this.progressBar1);
-            this.tabPage4.Controls.Add(this.label43);
-            this.tabPage4.Controls.Add(this.textBox8);
-            this.tabPage4.Controls.Add(this.lbl12);
-            this.tabPage4.Controls.Add(this.lbl11);
-            this.tabPage4.Controls.Add(this.lbl10);
-            this.tabPage4.Controls.Add(this.lbl9);
-            this.tabPage4.Controls.Add(this.lbl8);
-            this.tabPage4.Controls.Add(this.lbl7);
-            this.tabPage4.Controls.Add(this.lbl6);
-            this.tabPage4.Controls.Add(this.lbl5);
-            this.tabPage4.Controls.Add(this.lbl4);
-            this.tabPage4.Controls.Add(this.lbl3);
-            this.tabPage4.Controls.Add(this.lbl2);
-            this.tabPage4.Controls.Add(this.lbl1);
-            this.tabPage4.Controls.Add(this.comboBox1);
-            this.tabPage4.Controls.Add(this.label30);
-            this.tabPage4.Controls.Add(this.button12);
-            this.tabPage4.Controls.Add(this.textBox3);
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.button11);
-            this.tabPage4.Controls.Add(this.l12);
-            this.tabPage4.Controls.Add(this.l11);
-            this.tabPage4.Controls.Add(this.l10);
-            this.tabPage4.Controls.Add(this.l9);
-            this.tabPage4.Controls.Add(this.l8);
-            this.tabPage4.Controls.Add(this.l7);
-            this.tabPage4.Controls.Add(this.l6);
-            this.tabPage4.Controls.Add(this.l5);
-            this.tabPage4.Controls.Add(this.l4);
-            this.tabPage4.Controls.Add(this.l3);
-            this.tabPage4.Controls.Add(this.l2);
-            this.tabPage4.Controls.Add(this.l1);
-            this.tabPage4.Controls.Add(this.label24);
-            this.tabPage4.Controls.Add(this.label25);
-            this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Controls.Add(this.label27);
-            this.tabPage4.Controls.Add(this.label28);
-            this.tabPage4.Controls.Add(this.label29);
-            this.tabPage4.Controls.Add(this.label23);
-            this.tabPage4.Controls.Add(this.label22);
-            this.tabPage4.Controls.Add(this.label21);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.t12);
-            this.tabPage4.Controls.Add(this.t11);
-            this.tabPage4.Controls.Add(this.t10);
-            this.tabPage4.Controls.Add(this.t9);
-            this.tabPage4.Controls.Add(this.t8);
-            this.tabPage4.Controls.Add(this.t7);
-            this.tabPage4.Controls.Add(this.t6);
-            this.tabPage4.Controls.Add(this.t5);
-            this.tabPage4.Controls.Add(this.t4);
-            this.tabPage4.Controls.Add(this.t3);
-            this.tabPage4.Controls.Add(this.t2);
-            this.tabPage4.Controls.Add(this.t1);
-            this.tabPage4.Controls.Add(this.button10);
-            this.tabPage4.Controls.Add(this.button9);
-            this.tabPage4.Controls.Add(this.mobilePayDoubleGuid);
-            this.tabPage4.Controls.Add(this.mobilePayGuid);
-            this.tabPage4.Controls.Add(this.mobileFreeDoubleGuid);
-            this.tabPage4.Controls.Add(this.mobileFreeGuid);
-            this.tabPage4.Controls.Add(this.pcPayDoubleGuid);
-            this.tabPage4.Controls.Add(this.pcPayGuid);
-            this.tabPage4.Controls.Add(this.PcFreeDoubleGuid);
-            this.tabPage4.Controls.Add(this.pcFreeGuid);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.label16);
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.label12);
-            this.tabPage4.Controls.Add(this.label11);
-            this.tabPage4.Controls.Add(this.label10);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1426, 509);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "其他小功能";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.Tab4.Controls.Add(this.lblTickets);
+            this.Tab4.Controls.Add(this.label56);
+            this.Tab4.Controls.Add(this.label55);
+            this.Tab4.Controls.Add(this.label53);
+            this.Tab4.Controls.Add(this.textBox11);
+            this.Tab4.Controls.Add(this.lblSilver);
+            this.Tab4.Controls.Add(this.button15);
+            this.Tab4.Controls.Add(this.button3);
+            this.Tab4.Controls.Add(this.button1);
+            this.Tab4.Controls.Add(this.lCount);
+            this.Tab4.Controls.Add(this.label44);
+            this.Tab4.Controls.Add(this.label37);
+            this.Tab4.Controls.Add(this.label38);
+            this.Tab4.Controls.Add(this.label39);
+            this.Tab4.Controls.Add(this.label40);
+            this.Tab4.Controls.Add(this.label41);
+            this.Tab4.Controls.Add(this.label42);
+            this.Tab4.Controls.Add(this.label31);
+            this.Tab4.Controls.Add(this.label32);
+            this.Tab4.Controls.Add(this.label33);
+            this.Tab4.Controls.Add(this.label34);
+            this.Tab4.Controls.Add(this.label35);
+            this.Tab4.Controls.Add(this.label36);
+            this.Tab4.Controls.Add(this.progressBar1);
+            this.Tab4.Controls.Add(this.label43);
+            this.Tab4.Controls.Add(this.textBox8);
+            this.Tab4.Controls.Add(this.lbl12);
+            this.Tab4.Controls.Add(this.lbl11);
+            this.Tab4.Controls.Add(this.lbl10);
+            this.Tab4.Controls.Add(this.lbl9);
+            this.Tab4.Controls.Add(this.lbl8);
+            this.Tab4.Controls.Add(this.lbl7);
+            this.Tab4.Controls.Add(this.lbl6);
+            this.Tab4.Controls.Add(this.lbl5);
+            this.Tab4.Controls.Add(this.lbl4);
+            this.Tab4.Controls.Add(this.lbl3);
+            this.Tab4.Controls.Add(this.lbl2);
+            this.Tab4.Controls.Add(this.lbl1);
+            this.Tab4.Controls.Add(this.comboBox1);
+            this.Tab4.Controls.Add(this.label30);
+            this.Tab4.Controls.Add(this.button12);
+            this.Tab4.Controls.Add(this.textBox3);
+            this.Tab4.Controls.Add(this.textBox2);
+            this.Tab4.Controls.Add(this.button11);
+            this.Tab4.Controls.Add(this.l12);
+            this.Tab4.Controls.Add(this.l11);
+            this.Tab4.Controls.Add(this.l10);
+            this.Tab4.Controls.Add(this.l9);
+            this.Tab4.Controls.Add(this.l8);
+            this.Tab4.Controls.Add(this.l7);
+            this.Tab4.Controls.Add(this.l6);
+            this.Tab4.Controls.Add(this.l5);
+            this.Tab4.Controls.Add(this.l4);
+            this.Tab4.Controls.Add(this.l3);
+            this.Tab4.Controls.Add(this.l2);
+            this.Tab4.Controls.Add(this.l1);
+            this.Tab4.Controls.Add(this.label24);
+            this.Tab4.Controls.Add(this.label25);
+            this.Tab4.Controls.Add(this.label26);
+            this.Tab4.Controls.Add(this.label27);
+            this.Tab4.Controls.Add(this.label28);
+            this.Tab4.Controls.Add(this.label29);
+            this.Tab4.Controls.Add(this.label23);
+            this.Tab4.Controls.Add(this.label22);
+            this.Tab4.Controls.Add(this.label21);
+            this.Tab4.Controls.Add(this.label20);
+            this.Tab4.Controls.Add(this.label19);
+            this.Tab4.Controls.Add(this.label18);
+            this.Tab4.Controls.Add(this.t12);
+            this.Tab4.Controls.Add(this.t11);
+            this.Tab4.Controls.Add(this.t10);
+            this.Tab4.Controls.Add(this.t9);
+            this.Tab4.Controls.Add(this.t8);
+            this.Tab4.Controls.Add(this.t7);
+            this.Tab4.Controls.Add(this.t6);
+            this.Tab4.Controls.Add(this.t5);
+            this.Tab4.Controls.Add(this.t4);
+            this.Tab4.Controls.Add(this.t3);
+            this.Tab4.Controls.Add(this.t2);
+            this.Tab4.Controls.Add(this.t1);
+            this.Tab4.Controls.Add(this.button10);
+            this.Tab4.Controls.Add(this.button9);
+            this.Tab4.Controls.Add(this.mobilePayDoubleGuid);
+            this.Tab4.Controls.Add(this.mobilePayGuid);
+            this.Tab4.Controls.Add(this.mobileFreeDoubleGuid);
+            this.Tab4.Controls.Add(this.mobileFreeGuid);
+            this.Tab4.Controls.Add(this.pcPayDoubleGuid);
+            this.Tab4.Controls.Add(this.pcPayGuid);
+            this.Tab4.Controls.Add(this.PcFreeDoubleGuid);
+            this.Tab4.Controls.Add(this.pcFreeGuid);
+            this.Tab4.Controls.Add(this.label14);
+            this.Tab4.Controls.Add(this.label15);
+            this.Tab4.Controls.Add(this.label16);
+            this.Tab4.Controls.Add(this.label17);
+            this.Tab4.Controls.Add(this.label13);
+            this.Tab4.Controls.Add(this.label12);
+            this.Tab4.Controls.Add(this.label11);
+            this.Tab4.Controls.Add(this.label10);
+            this.Tab4.Location = new System.Drawing.Point(4, 22);
+            this.Tab4.Name = "Tab4";
+            this.Tab4.Padding = new System.Windows.Forms.Padding(3);
+            this.Tab4.Size = new System.Drawing.Size(1426, 509);
+            this.Tab4.TabIndex = 3;
+            this.Tab4.Text = "其他小功能";
+            this.Tab4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(246, 440);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 52);
+            this.button3.TabIndex = 323;
+            this.button3.Text = "清空缓存";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(208, 52);
+            this.button1.TabIndex = 322;
+            this.button1.Text = "清空数据库（慎点）";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // lCount
             // 
@@ -1432,6 +1486,7 @@
             this.button12.TabIndex = 290;
             this.button12.Text = "模拟抽奖";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // textBox3
             // 
@@ -1455,6 +1510,7 @@
             this.button11.TabIndex = 287;
             this.button11.Text = "随机产生奖励";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // l12
             // 
@@ -1764,6 +1820,7 @@
             this.button10.TabIndex = 250;
             this.button10.Text = "概率计算";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -1773,6 +1830,7 @@
             this.button9.TabIndex = 249;
             this.button9.Text = "查询GUID";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // mobilePayDoubleGuid
             // 
@@ -1926,23 +1984,138 @@
             // 
             this.nationalDayOrdersTableAdapter.ClearBeforeFill = true;
             // 
-            // button3
+            // button14
             // 
-            this.button3.Location = new System.Drawing.Point(246, 440);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 52);
-            this.button3.TabIndex = 323;
-            this.button3.Text = "清空缓存";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button14.Location = new System.Drawing.Point(840, 418);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(164, 40);
+            this.button14.TabIndex = 298;
+            this.button14.Text = "删除用户订单";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button1
+            // textUserIdList
             // 
-            this.button1.Location = new System.Drawing.Point(32, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(208, 52);
-            this.button1.TabIndex = 322;
-            this.button1.Text = "清空数据库（慎点）";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textUserIdList.Location = new System.Drawing.Point(117, 418);
+            this.textUserIdList.Multiline = true;
+            this.textUserIdList.Name = "textUserIdList";
+            this.textUserIdList.Size = new System.Drawing.Size(695, 38);
+            this.textUserIdList.TabIndex = 299;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(46, 432);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(65, 12);
+            this.label52.TabIndex = 300;
+            this.label52.Text = "UserIdList";
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(875, 393);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(180, 34);
+            this.button15.TabIndex = 324;
+            this.button15.Text = "查询用户银子、礼券";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // lblSilver
+            // 
+            this.lblSilver.AutoSize = true;
+            this.lblSilver.Location = new System.Drawing.Point(1126, 404);
+            this.lblSilver.Name = "lblSilver";
+            this.lblSilver.Size = new System.Drawing.Size(0, 12);
+            this.lblSilver.TabIndex = 325;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(716, 399);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(139, 21);
+            this.textBox11.TabIndex = 327;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(669, 404);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(41, 12);
+            this.label53.TabIndex = 328;
+            this.label53.Text = "UserId";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(1068, 404);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(41, 12);
+            this.label55.TabIndex = 329;
+            this.label55.Text = "银子：";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(1199, 404);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(41, 12);
+            this.label56.TabIndex = 331;
+            this.label56.Text = "礼券：";
+            // 
+            // lblTickets
+            // 
+            this.lblTickets.AutoSize = true;
+            this.lblTickets.Location = new System.Drawing.Point(1246, 404);
+            this.lblTickets.Name = "lblTickets";
+            this.lblTickets.Size = new System.Drawing.Size(0, 12);
+            this.lblTickets.TabIndex = 332;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.txtConfigContent);
+            this.tabPage4.Controls.Add(this.btnConfig);
+            this.tabPage4.Controls.Add(this.comboxConfig);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1426, 509);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "活动配置";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // comboxConfig
+            // 
+            this.comboxConfig.FormattingEnabled = true;
+            this.comboxConfig.Items.AddRange(new object[] {
+            "1.主活动",
+            "2.签到活动",
+            "3.充值活动",
+            "4.大富翁"});
+            this.comboxConfig.Location = new System.Drawing.Point(38, 21);
+            this.comboxConfig.Name = "comboxConfig";
+            this.comboxConfig.Size = new System.Drawing.Size(223, 20);
+            this.comboxConfig.TabIndex = 0;
+            this.comboxConfig.Text = "    - - - - 请选择 - - - -";
+            // 
+            // btnConfig
+            // 
+            this.btnConfig.Location = new System.Drawing.Point(267, 19);
+            this.btnConfig.Name = "btnConfig";
+            this.btnConfig.Size = new System.Drawing.Size(75, 23);
+            this.btnConfig.TabIndex = 1;
+            this.btnConfig.Text = "查看";
+            this.btnConfig.UseVisualStyleBackColor = true;
+            this.btnConfig.Click += new System.EventHandler(this.btnConfig_Click);
+            // 
+            // txtConfigContent
+            // 
+            this.txtConfigContent.Location = new System.Drawing.Point(38, 68);
+            this.txtConfigContent.Multiline = true;
+            this.txtConfigContent.Name = "txtConfigContent";
+            this.txtConfigContent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtConfigContent.Size = new System.Drawing.Size(1323, 397);
+            this.txtConfigContent.TabIndex = 2;
             // 
             // Form1
             // 
@@ -1973,6 +2146,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tcysysactivitysupportdbDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Tab4.ResumeLayout(false);
+            this.Tab4.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
@@ -2040,7 +2215,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn totalCountDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn usedCountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn specialItemCodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage Tab4;
         private System.Windows.Forms.Label lCount;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label37;
@@ -2187,6 +2362,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox textUserIdList;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label lblSilver;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label lblTickets;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox txtConfigContent;
+        private System.Windows.Forms.Button btnConfig;
+        private System.Windows.Forms.ComboBox comboxConfig;
     }
 }
 
